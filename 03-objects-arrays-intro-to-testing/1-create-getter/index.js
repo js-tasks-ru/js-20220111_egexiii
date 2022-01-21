@@ -7,7 +7,7 @@ export function createGetter(path) {
   const chainedPath = path.split('.');
 
   if (!chainedPath.length) {
-    return undefined;
+    return;
   }
 
   return (src) => {
